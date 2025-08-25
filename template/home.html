@@ -48,6 +48,7 @@
                     <div class="card-body">
                         {{ task.task }} 
                         <span style="position: relative; float: right;">
+                            <a href="{% url 'deleteTask' task.pk %}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                             <a href="{% url 'mark_as_undone' task.pk %}" class="btn btn-danger"><i class="fa fa-times"></i> Mark as Undone</a>
                         </span>
                     </div>
